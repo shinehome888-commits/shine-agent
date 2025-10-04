@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Shine-Agent – Free AI Marketing for Alkebulan [AFRICA]</title>
-    <meta name="description" content="A free marketing tool for youth entrepreneurs, SMEs and nonprofits coming soon. 
+    <meta name="description" content="A free marketing tool for youth entrepreneurs, SMEs and nonprofits coming soon. #shine-agent888">
 
     <!-- Favicon -->
     <link rel="icon" href="https://via.placeholder.com/32/0a0a0a/D4AF37?text=SA" type="image/x-icon">
@@ -45,15 +45,15 @@
         }
 
         .brand-footer {
-            color: #D32F2F;
+            color: #D4AF37; /* Gold */
             font-weight: 700;
             font-size: 1.3rem;
             margin: 1rem 0;
         }
 
-        /* Button Style */
+        /* Button Style - DEEP BLUE */
         .btn {
-            background-color: #D32F2F;
+            background-color: #1E3A8A; /* Deep bold blue */
             color: white;
             font-weight: 700;
             font-size: 1.2rem;
@@ -63,10 +63,13 @@
             display: inline-block;
             margin: 1.5rem 1rem;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
         }
 
         .btn:hover {
+            background-color: #1E40AF;
             transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(30, 58, 138, 0.5);
         }
 
         /* Form Container */
@@ -171,29 +174,30 @@
         <p class="brand-footer">Powered by KS1 Empire Group & Foundation</p>
 
         <p style="color: #ccc;">
-          A free marketing tool for youth entrepreneurs, SMEs and nonprofits coming soon. #Shine-Agent888
+          A free marketing tool for young entrepreneurs, SMEs and nonprofits coming soon. #Shine-Agent888
         </p>
 
-        <a href="https://wa.me/+233240254680" target="_blank" class="btn">💬 Whatsapp our Team</a>
+        <!-- Buttons with DEEP BLUE -->
+        <a href="https://wa.me/+233240254680" target="_blank" class="btn">💬 Chat Our Team</a>
         <a href="#how-it-works" class="btn">📖 How It Works</a>
     </div>
 
     <!-- WhatsApp Form -->
     <div class="form-container">
         <h2 style="color: #D4AF37;">Get Free Access Now</h2>
-        <p style="color: #ccc;">Enter your WhatsApp number below — we’ll send you a privite link to ShineGPT.</p>
+        <p style="color: #ccc;">Enter your WhatsApp number below — we’ll send you a private link to ShineGPT.</p>
 
         <input type="tel" id="phoneInput" placeholder="+233240254680" />
 
         <br>
-        <button onclick="sendMessage()" class="btn">📲 Send My Welcome Message</button>
+        <button onclick="sendMessage()" class="btn">📲 Send Me ShineGPT</button>
     </div>
 
     <!-- Features -->
     <div class="features">
         <div class="feature-card">
             <h3>📱 Learn 4IR for Free</h3>
-            <p>AI, Blockchain, Crypto, Big Data, Web3 And More — #ASKSHINEGPTANYTHING.</p>
+            <p>AI, Blockchain, Crypto, Big Data, Web3 and more — ask anything. Learn everywhere. #AskShineGPTAnything</p>
         </div>
         <div class="feature-card">
             <h3>🌍 For African Youth</h3>
@@ -201,24 +205,24 @@
         </div>
         <div class="feature-card">
             <h3>💡 Zero Cost</h3>
-            <p>No monthly fees. No login. Just knowledge with love.</p>
+            <p>No monthly fees. No login. Just knowledge shared with love.</p>
         </div>
     </div>
 
     <!-- How It Works -->
     <section id="how-it-works" class="mission">
         <h2>How It Works</h2>
-        <p>We believe education should be open to everyone — not locked behind paywalls.</p>
+        <p>We believe education should be open to everyone — not locked behind paywalls or expensive tools.</p>
         <br>
         <ol style="margin: 1rem 0 1rem 1.5rem; text-align: left;">
             <li>You enter your WhatsApp number above</li>
-            <li>Click “Send My Welcome Message”</li>
+            <li>Click “Send Me ShineGPT”</li>
             <li>A chat opens with our team</li>
-            <li>We send you pravite link to ShineGPT</li>
-            <li>You learn — anytime, anywhere</li>
+            <li>We send you a private link to access ShineGPT</li>
+            <li>You learn — anytime, anywhere, even offline</li>
         </ol>
         <br>
-        <p>This is how we make the 4th Industrial Revolution 4IR accessible to all.</p>
+        <p>This is how we make the 4th Industrial Revolution (4IR) accessible to all — one learner at a time.</p>
         <p><strong>For Alkebulan. For Change. For Hope.</strong></p>
     </section>
 
@@ -229,7 +233,7 @@
         <em>“Education should be a light, not a luxury.”</em>
     </footer>
 
-    <!-- SCRIPT: Opens WhatsApp with Your Number -->
+    <!-- SCRIPT: Opens WhatsApp with Pre-filled Message -->
     <script>
         function sendMessage() {
             const phone = document.getElementById("phoneInput").value.trim();
@@ -239,11 +243,14 @@
                 return;
             }
 
-            // This opens WhatsApp with a pre-filled message to YOUR number
-            const url = `https://wa.me/+233240254680?text=Hello%20KS1%20Empire!%20I'm%20${phone}%20and%20ready%20to%20learn%20with%20Shine-Agent.`;
+            // Create pre-filled message
+            const message = encodeURIComponent(
+                "Hello! I'm ready to get started with ShineGPT. Please send me the private link."
+            );
+            const url = `https://wa.me/+233240254680?text=${message}`;
 
             window.open(url, '_blank');
         }
     </script>
 </body>
-</html>
+</html>l>
